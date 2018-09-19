@@ -4,10 +4,23 @@
     <script type="text/javascript" src="slideshow.js"></script>
   </head>
   <body>
-    <img id="shrek" src="https://www.dreamworksanimation.com/wp-content/uploads/2014/10/shrek-watch-shrek4-on.jpg" height="500" width="600"/>
-    <br>
-    <button onclick="previous()">Previous</button>
-    <span id="imagenumber">1</span>
-    <button onclick="next()">Next</button>
+    <table>
+      <tr>
+        <td>
+          <img id="shrek" src="https://www.dreamworksanimation.com/wp-content/uploads/2014/10/shrek-watch-shrek4-on.jpg" height="500" width="600"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="previous()">Previous</button>
+          <div align="center">
+            <span id="imagenumber">1</span>
+          </div>
+          <div align="right">
+            <button onclick="next()">Next</button>
+          </div>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
