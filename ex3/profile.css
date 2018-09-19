@@ -1,3 +1,36 @@
 body {
-  background-color: lightblue;
+  background-image: url(https://vignette.wikia.nocookie.net/shrek/images/5/58/Fc19d7db9cbcb7659aae3dce7bf6b3c1.jpg/revision/latest?cb=20170129025042);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-color: #937f52;
+  background-attachment: fixed;
+}
+
+a {
+  color: white;
+  font-family: comic;
+  font-size: 15pt;
+  max-width: 300px;
+  text-shadow:
+  -1px -1px black,
+  -1px 1px black,
+  1px -1px black,
+  1px 1px black;
+}
+
+a:hover {
+  background-color: white;
+  color: red;
+}
+
+p.shrek {
+  color: white;
+  font-family: comic;
+  font-size: 15pt;
+  max-width: 300px;
+  text-shadow:
+  -1px -1px black,
+  -1px 1px black,
+  1px -1px black,
+  1px 1px black;
 }
