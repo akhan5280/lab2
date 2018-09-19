@@ -10,5 +10,7 @@ function validate() {
   else {
     firstPassword.disabled = true;
     secondPassword.disabled = true;
+    document.getElementById('button').disabled = true;
+    document.getElementById('button').innerHTML = "Validated";
   }
 }
