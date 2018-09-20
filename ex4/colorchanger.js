@@ -7,13 +7,16 @@ function change() {
   let bggreen = document.getElementById('bggreen');
   let bgblue = document.getElementById('bgblue');
   let maintext = document.getElementById('maintext');
-  if (parseInt(red.value,16) + parseInt(green.value,16) + parseInt(blue.value,16) <= 255 && parseInt(red.value,16) + parseInt(green.value,16) + parseInt(blue.value,16) > 0) {
+  if (parseInt(red.value,16) <= 255 && parseInt(green.value,16) <= 255 && parseInt(blue.value,16) <= 255) {
     maintext.style.borderColor = red.value + green.value + blue.value;
+    console.log("border changed to", red.value + green.value + blue.value,"\nnow =",maintext.style.borderColor);
   }
   if (!width.value.isNaN && width.value) {
     maintext.style.width = Number(width.value);
+    console.log("width changed to",Number(width.value),"\nnow =",maintext.style.width);
   }
-  if (parseInt(bgred.value,16) + parseInt(bggreen.value,16) + parseInt(bgblue.value,16) <= 255 && parseInt(bgred.value,16) + parseInt(bggreen.value,16) + parseInt(bgblue.value,16) > 0) {
+  if (parseInt(bgred.value,16) <= 255 && parseInt(bggreen.value,16) <= 255 && parseInt(bgblue.value,16) <= 255) {
     maintext.style.backgroundColor = bgred.value + bggreen.value + bgblue.value;
+    console.log("bg changed to", bgred.value + bggreen.value + bgblue.value,"\nnow =", maintext.style.backgroundColor)
   }
 }
