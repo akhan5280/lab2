@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 376px 48px 376px 1fr;
-  grid-template-rows: 450px 50px;
+  grid-template-columns: 1fr 564px 72px 564px 1fr;
+  grid-template-rows: 675px 50px;
 }
 
 body {
