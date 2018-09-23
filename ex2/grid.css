@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 378px 44px 378px 1fr;
+  grid-template-columns: 1fr 376px 48px 376px 1fr;
   grid-template-rows: 450px 50px;
 }
 
@@ -10,15 +10,6 @@ body {
 
 #shrek {
   grid-area: 1 / 2 / 2 / 4;
-  border-top-width: 2px;
-  border-top-color: black;
-  border-top-style: solid;
-  border-left-width: 2px;
-  border-left-color: black;
-  border-left-style: solid;
-  border-right-width: 2px;
-  border-right-color: black;
-  border-right-style: solid;
 }
 
 button {
@@ -31,31 +22,32 @@ button {
     1px -1px black,
     1px 1px black;
   background-color: #badb34;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: black;
 }
 
 #next {
-  border-width: 2px;
-  border-color: black;
-  border-style: solid;
+  border-width: 0px;
   grid-area: 2 / 4 / 3 / 5;
 }
 
 #previous {
-  border-width: 2px;
-  border-color: black;
-  border-style: solid;
+  border-width: 0px;
   grid-area: 2 / 2 / 3 / 3;
 }
 
 #block {
   grid-area: 2 / 3 / 3 / 4;
   background-color: #badb34;
-  border-bottom-width: 2px;
-  border-bottom-color: black;
-  border-bottom-style: solid;
-  border-top-width: 2px;
-  border-top-color: black;
-  border-top-style: solid;
+  border-left-width: 1px;
+  border-left-color: #768c21;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-right-color: #768c21;
+  border-right-style: solid;
 }
 
 #imagenumber {
