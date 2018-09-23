@@ -8,9 +8,12 @@
       <div class="grid-container">
         <img id="shrek" src="https://www.dreamworksanimation.com/wp-content/uploads/2014/10/shrek-watch-shrek4-on.jpg" height="450px" width="800px"/>
         <button id="previous" onclick="previous()">Previous</button>
-        <span id="imagenumber" disabled="true">1</span>
+        <block id="block">
+          <span id="imagenumber" disabled="true">1</span>
+        </block>
         <button id="next" onclick="next()">Next</button>
         <div id="left"></div><div id="right"/></div>
+        <script>console.log(document.getElementById('imagenumber').style)</script>
       </div>
   </body>
 </html>
