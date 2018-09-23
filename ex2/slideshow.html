@@ -2,25 +2,15 @@
   <head>
     <title>Slide Show</title>
     <script type="text/javascript" src="slideshow.js"></script>
+    <link href="grid.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
-          <img id="shrek" src="https://www.dreamworksanimation.com/wp-content/uploads/2014/10/shrek-watch-shrek4-on.jpg" height="500" width="600"/>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button onclick="previous()">Previous</button>
-          <div align="center">
-            <span id="imagenumber">1</span>
-          </div>
-          <div align="right">
-            <button onclick="next()">Next</button>
-          </div>
-        </td>
-      </tr>
-    </table>
+      <div class="grid-container">
+        <img id="shrek" src="https://www.dreamworksanimation.com/wp-content/uploads/2014/10/shrek-watch-shrek4-on.jpg" height="450px" width="800px"/>
+        <button id="previous" onclick="previous()">Previous</button>
+        <span id="imagenumber" disabled="true">1</span>
+        <button id="next" onclick="next()">Next</button>
+        <div id="left"></div><div id="right"/></div>
+      </div>
   </body>
 </html>
