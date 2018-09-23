@@ -1,15 +1,15 @@
 let images = [];
 let i = 0;
-images.push("shrek1.jpg");
-images.push("shrek2.jpg");
-images.push("shrek3.jpg");
-images.push("shrek4.jpg");
-images.push("shrek5.jpg");
-images.push("shrek6.jpg");
-images.push("shrek7.jpg");
-images.push("shrek8.jpg");
-images.push("shrek9.jpg");
-images.push("shrek10.jpg");
+images.push("images/shrek1.jpg");
+images.push("images/shrek2.jpg");
+images.push("images/shrek3.jpg");
+images.push("images/shrek4.jpg");
+images.push("images/shrek5.jpg");
+images.push("images/shrek6.jpg");
+images.push("images/shrek7.jpg");
+images.push("images/shrek8.jpg");
+images.push("images/shrek9.jpg");
+images.push("images/shrek10.jpg");
 
 function next() {
   let currentSlide = document.getElementById('shrek');
