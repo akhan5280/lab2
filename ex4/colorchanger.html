@@ -2,36 +2,44 @@
   <head>
     <title>Color Changer</title>
     <script type="text/javascript" src="colorchanger.js"></script>
+    <link href="colorchanger.css" rel="stylesheet" type="text/css"/>
   </head>
   <body style="background-color: grey">
-    <p id="maintext" style="width: 500; border-width: 5px; border-style: solid">
-      According to all known laws of aviation,
-      there is no way a bee should be able to fly.
-      Its wings are too small to get its fat little body off the ground.
-      The bee, of course, flies anyway
-      because bees don't care what humans think is impossible.
-    </p>
-    <p>
-      Border
-      <br>
-      Red Value(00-ff):
-      <input type="text" id="red"><br>
-      Green Value(00-ff):
-      <input type="text" id="green"><br>
-      Blue Value(00-ff):
-      <input type="text" id="blue"><br>
-      Width:
-      <input type="text" id="width"><br>
-      <br>
-      Background
-      <br>
-      Red Value(00-ff):
-      <input type="text" id="bgred"><br>
-      Green Value(00-ff):
-      <input type="text" id="bggreen"><br>
-      Blue Value(00-ff):
-      <input type="text" id="bgblue"><br>
-    </p>
-    <button onclick="change()">Change colors</button>
+    <div align="center">
+      <div class="flex-container">
+        <div id="maintext" style="width: 500; border-width: 5px; border-style: solid; background-color: white">
+          According to all known laws of aviation,
+          there is no way a bee should be able to fly.
+          Its wings are too small to get its fat little body off the ground.
+          The bee, of course, flies anyway
+          because bees don't care what humans think is impossible.
+        </div>
+        <br>
+        <div class="grid-container-border">
+          <div class="title">Border</div>
+          <div class="label-1">Red Value(00-ff):</div>
+          <div class="label-2">Green Value(00-ff):</div>
+          <div class="label-3">Blue Value(00-ff):</div>
+          <div class="label-4">Width:</div>
+          <input class="input-1" type="text" id="red">
+          <input class="input-2" type="text" id="green">
+          <input class="input-3" type="text" id="blue">
+          <input class="input-4" type="text" id="width">
+        </div>
+        <br>
+        <div class="grid-container-background">
+          <div class="title">Background</div>
+          <div class="label-1">Red Value(00-ff):</div>
+          <div class="label-2">Green Value(00-ff):</div>
+          <div class="label-3">Blue Value(00-ff):</div>
+          <input class="input-1" type="text" id="bgred">
+          <input class="input-2" type="text" id="bggreen">
+          <input class="input-3" type="text" id="bgblue">
+        </div>
+        <br>
+        <button onclick="change()">Change</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
   </body>
 </html>
