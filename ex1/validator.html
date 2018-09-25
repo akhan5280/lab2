@@ -2,14 +2,22 @@
   <head>
     <title>Validator</title>
     <script type="text/javascript" src="validator.js"></script>
+    <link href="validator.css" rel="stylesheet" type="text/css"></link>
   </head>
-  <body>
-    <p>
-      Please type a password (8 characters minimum):<br>
-      <input type="text" id="first"><br>
-      Confirm your password:<br>
-      <input type="text" id="second">
-    </p>
-    <button id="button" onclick="validate()">Validate</button>
+  <body style="background-color: #0A2463">
+    <a href="../index.html">Back to Home Page</a>
+    <div align="center">
+      <div class="grid-container">
+        <block id="block1">
+          <div id="text-1">Please type a password (8 characters minimum):</div>
+        </block>
+        <input type="text" id="first">
+        <block id="block2">
+          <div id="text-2">Confirm your password:</div>
+        </block>
+        <input type="text" id="second">
+        <button id="button" onclick="validate()">Validate</button>
+      </div>
+    </div>
   </body>
 </html>

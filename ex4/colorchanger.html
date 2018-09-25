@@ -4,7 +4,8 @@
     <script type="text/javascript" src="colorchanger.js"></script>
     <link href="colorchanger.css" rel="stylesheet" type="text/css"/>
   </head>
-  <body style="background-color: grey">
+  <body style="background-color: #777777" onload="listen()">
+    <a href="../index.html">Back to Home Page</a>
     <div align="center">
       <div class="flex-container">
         <div id="maintext" style="width: 500; border-width: 5px; border-style: solid; background-color: white">
@@ -17,10 +18,10 @@
         <br>
         <div class="grid-container-border">
           <div class="title">Border</div>
-          <div class="label-1">Red Value(00-ff):</div>
-          <div class="label-2">Green Value(00-ff):</div>
-          <div class="label-3">Blue Value(00-ff):</div>
-          <div class="label-4">Width:</div>
+          <div id="redlabel" class="label-1">Red Value (00-ff):</div>
+          <div id="greenlabel" class="label-2">Green Value (00-ff):</div>
+          <div id="bluelabel" class="label-3">Blue Value (00-ff):</div>
+          <div id="widthlabel" class="label-4">Width:</div>
           <input class="input-1" type="text" id="red">
           <input class="input-2" type="text" id="green">
           <input class="input-3" type="text" id="blue">
@@ -29,15 +30,16 @@
         <br>
         <div class="grid-container-background">
           <div class="title">Background</div>
-          <div class="label-1">Red Value(00-ff):</div>
-          <div class="label-2">Green Value(00-ff):</div>
-          <div class="label-3">Blue Value(00-ff):</div>
-          <input class="input-1" type="text" id="bgred">
-          <input class="input-2" type="text" id="bggreen">
-          <input class="input-3" type="text" id="bgblue">
+          <div id="bgredlabel" class="label-1">Red Value (00-ff):</div>
+          <div id="bggreenlabel" class="label-2">Green Value (00-ff):</div>
+          <div id="bgbluelabel" class="label-3">Blue Value (00-ff):</div>
+          <input class="input-1" type="text" id="bgred"/>
+          <input class="input-2" type="text" id="bggreen"/>
+          <input class="input-3" type="text" id="bgblue"/>
         </div>
         <br>
         <button onclick="change()">Change</button>
+        <br>
         <button onclick="reset()">Reset</button>
       </div>
     </div>
