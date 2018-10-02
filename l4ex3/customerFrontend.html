@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Shrek Store</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"></link>
+    <script type="text/javascript" src="formChecker.js"></script>
+  </head>
+  <body style="background-color: #888888" onload="listen()">
+    <div align="left">
+      <form method="post" class="grid-container" action="customerBackend.php" onsubmit="return formChecker();">
+        <div class="title"><div id="title">Get All The Shrek Merch You Need</div></div>
+        <div class="label-1"><div id="usernamelabel">Username:</div></div>
+        <div class="label-2"><div id="passwordlabel">Password:</div></div>
+        <div class="label-3"><div id="hatslabel"># Shrek hats ($10 each):</div></div>
+        <div class="label-4"><div id="shirtslabel"># Shrek shirts ($20 each):</div></div>
+        <div class="label-5"><div id="mugslabel"># Shrek mugs ($15 each):</div></div>
+        <div class="label-6"><div id="shippinglabel">Shipping:</div></div>
+        <input class="input-1" type="email" id="username" name="username">
+        <input class="input-2" type="password" id="password" name="password">
+        <input class="input-3" type="number" id="hats" name="hats">
+        <input class="input-4" type="number" id="shirts" name="shirts">
+        <input class="input-5" type="number" id="mugs" name="mugs">
+        <div class="input-6"><div align="left" id="sevenday"><input name="shipping" type="radio" value="0">Free 7 Day</div></div>
+        <div class="input-7"><div align="left" id="overnight"><input name="shipping" type="radio" value="50">$50.00 Overnight</div></div>
+        <div class="input-8"><div align="left" id="threeday"><input name="shipping" type="radio" value="5">$5.00 Three Day</div></div>
+        <input class="button-1" type="submit" name="submit" value="Checkout">
+        <button class="button-2" onclick="reset()">Reset</button>
+      </form>
+      <a href="../index.html">Back to Home Page</a>
+    </div>
+  </body>
+</html>

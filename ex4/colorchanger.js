@@ -28,13 +28,6 @@ function listen() {
   bgred.addEventListener("mouseout", function(){ blur("bgred"); });
   bggreen.addEventListener("mouseout", function(){ blur("bggreen"); });
   bgblue.addEventListener("mouseout", function(){ blur("bgblue"); });
-  red.addEventListener("blur", function(){ blur("red"); });
-  green.addEventListener("blur", function(){ blur("green"); });
-  blue.addEventListener("blur", function(){ blur("blue"); });
-  width.addEventListener("blur", function(){ blur("width"); });
-  bgred.addEventListener("blur", function(){ blur("bgred"); });
-  bggreen.addEventListener("blur", function(){ blur("bggreen"); });
-  bgblue.addEventListener("blur", function(){ blur("bgblue"); });
 }
 
 function change() {

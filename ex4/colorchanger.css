@@ -8,6 +8,8 @@
 .flex-container {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .grid-conatiner-background, .grid-container-border, #maintext, button {
