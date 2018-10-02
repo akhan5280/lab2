@@ -4,7 +4,7 @@
     <link href="styles.css" rel="stylesheet" type="text/css"></link>
     <script type="text/javascript" src="formChecker.js"></script>
   </head>
-  <body style="background-color: #888888" onload="listen()">
+  <body onload="listen()">
     <div align="left">
       <form method="post" class="grid-container" action="customerBackend.php" onsubmit="return formChecker();">
         <div class="title"><div id="title">Get All The Shrek Merch You Need</div></div>
@@ -25,6 +25,12 @@
         <input class="button-1" type="submit" name="submit" value="Checkout">
         <button class="button-2" onclick="reset()">Reset</button>
       </form>
+      <div class="flex-container">
+        <img class="flex-item" src="images/shrekhat.jpg"></img>
+        <img class="flex-item" src="images/shrekshirt.jpg"></img>
+        <img class="flex-item" src="images/shrekmug.jpg"></img>
+      </div>
+      <br>
       <a href="../index.html">Back to Home Page</a>
     </div>
   </body>

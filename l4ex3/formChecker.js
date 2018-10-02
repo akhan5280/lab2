@@ -127,6 +127,6 @@ function focus(n,on) {
     label[0].style.backgroundColor = "white";
   }
   else {
-    label[0].style.backgroundColor = "#aaaaaa";
+    label[0].style.backgroundColor = "#47682C";
   }
 }
