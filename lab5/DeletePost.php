@@ -30,7 +30,6 @@ if (isset($_POST["submit"])) {
     }
   }
   echo "<button onclick=\"reload()\">Refresh</button>";
-  //echo "<meta http-equiv='refresh' content='0'>";
 }
 
 ?>
